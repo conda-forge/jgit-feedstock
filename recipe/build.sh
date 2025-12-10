@@ -3,6 +3,7 @@
 set -o xtrace -o nounset -o pipefail -o errexit
 
 # Build archive with jar and other files
+cd src
 export MAVEN_OPTS="-Xmx2048m"
 mvn clean install -DskipTests=True
 
